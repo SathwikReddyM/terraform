@@ -21,7 +21,7 @@ sudo systemctl enable nginx
 # Edit the default Nginx configuration file
 sudo nano -ES /etc/nginx/sites-available/default <<EOF
 upstream flaskhelloworld {
-    server 127.0.0.1:8000;
+    server 127.0.0.1:5000;
 }
 
 location / {
